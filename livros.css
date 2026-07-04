@@ -361,6 +361,8 @@ section h1::before {
         padding: 15px 20px; 
         scroll-snap-type: x mandatory; 
         -webkit-overflow-scrolling: touch; 
+
+        justify-content: flex-start;
     }
     sessao-livros-romance::-webkit-scrollbar,
     .sessao-livros-terror::-webkit-scrollbar,
@@ -385,7 +387,7 @@ section h1::before {
     }
 
     .romance img, .terror img, .fantasia img, .lgbt img {
-        width: 100%;
+        width: 90%;
         height: auto;
         aspect-ratio: 2/3; 
         border-radius: 12px;
