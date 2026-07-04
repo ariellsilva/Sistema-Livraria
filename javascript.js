@@ -119,21 +119,37 @@ const pesquisa = document.getElementById("input-pesquisa");
 if (pesquisa) {
     pesquisa.addEventListener("input", () => {
         const termo = pesquisa.value.toLowerCase().trim();
-        const livros = document.querySelectorAll('main div[class^="romance-"], main div[class^="terror-"], main div[class^="fantasia-"], main div[class^="lgbt-"]');
+        
+        // Seleciona todas as seções principais dentro do main
+        const secoes = document.querySelectorAll("main section");
 
-        livros.forEach(livro => {
-            const titulo = livro.querySelector("h3").textContent.toLowerCase();
-            const sinopse = livro.querySelector("p").textContent.toLowerCase();
+        secoes.forEach(secao => {
+            const classeSecao = secao.className.toLowerCase();
+            
+            // Se a barra estiver vazia, mostra todas as seções normalmente
+            if (termo === "") {
+                secao.style.display = "";
+                
+                // Garante que todos os livros dentro dela voltem a aparecer
+                const livros = secao.querySelectorAll('[class^="romance-"], [class^="terror-"], [class^="fantasia-"], [class^="lgbt-"]');
+                livros.forEach(livro => livro.style.display = "");
+                return;
+            }
 
-            if (titulo.includes(termo) || sinopse.includes(termo)) {
-                livro.style.display = "block";
+            // Se o que foi digitado for IGUAL ao nome da classe da seção (ex: "romance", "terror")
+            if (classeSecao === termo) {
+                secao.style.display = ""; // Mostra a seção inteira
+                
+                // Garante que todos os cards de livros dentro dela fiquem visíveis
+                const livros = secao.querySelectorAll('[class^="romance-"], [class^="terror-"], [class^="fantasia-"], [class^="lgbt-"]');
+                livros.forEach(livro => livro.style.display = "");
             } else {
-                livro.style.display = "none";
+                // Se não for o gênero digitado, esconde a seção inteira
+                secao.style.display = "none";
             }
         });
     });
 }
-
 // ==========================================
 // 4. FUNCIONAMENTO DOS BOTÕES DE FILTRO
 // ==========================================
@@ -198,6 +214,9 @@ function voltar() {
 window.mudar = mudar;
 window.voltar = voltar;
 
+// ==========================================
+// 6. CONTROLE DO MODAL DE COMPRA
+// ==========================================
 const modal = document.getElementById("modal-qrcode");
 
 function abrir(){
@@ -207,11 +226,11 @@ function abrir(){
         window.location.href = "login.html";
         return;
     }
-    modal.showModal();
+    if (modal) modal.showModal();
 }
 
 function fechar(){
-    modal.close(); // Corrigido de closest() para close()
+    if (modal) modal.close();
 }
 
 // Expõe para o HTML (onclick)
