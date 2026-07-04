@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+     <link rel="stylesheet" href="livros.css">
+</head>
+<body>
+
+<nav class="navegacao-livros">
+    <a href="index.html">Menu</a>
+    <a href="carrinho.html">Carrinho</a>
+    <a href="login.html" id="link-login">Login</a>
+    <a href="#" id="botao-sair" style="display: none; color: red;">Sair</a>
+</nav>
+
+
+<div class="buscar">
+    <span class="material-symbols-outlined">search</span>
+    <input type="text" id="input-pesquisa" placeholder="Pesquisar">
+</div>
+
+<div class="barra-pesquisa">
+    <button id="todos">Todos</button>
+    <button id="lgbt">Lgbt</button>
+    <button id="romance">Romance</button>
+    <button id="fantasia">Fantasia</button>
+    <button id="horror">Horror</button>
+</div>
+
+    <header>
+        <img src="produtos img/banner 1.png" alt="" id="imagem">
+        <button onclick="mudar()"> > </button>
+        <button onclick="voltar()"> < </button>
+    </header>
+
+    <main>
+
+        <section class="romance">
+            <h1>Livros de Romance</h1>
+            <div class="sessao-livros-romance">
+                <div class="romance-1">
+                    <img src="produtos img/livro romance 1.webp" alt="">
+                    <h3>É assim que acaba</h3>
+                    <p>Um romance sobre as escolhas corretas nas situações mais difíceis. As coisas não foram sempre fáceis para Lily, mas isso nunca a impediu.</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>               
+             </div>
+
+                 <div class="romance-2">
+                    <img src="produtos img/livro romance 2.webp" alt="">
+                    <h3>Um Amor para Recordar</h3>
+                    <p>Um jovem do ensino médio é obrigado a ser o tutor de uma escola de baixa renda. Ele se apaixona pela filha do pastor.</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>                
+            </div>
+
+                <div class="romance-3">
+                    <img src="produtos img/livro romance 3.webp" alt="">
+                    <h3>Orgulho e Preconceito</h3>
+                    <p>Acompanha a família Bennet. Como a propriedade não pode ser herdada por mulheres, são obrigadas a se casarem com homens ricos.</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>               
+             </div>
+
+                <div class="romance-4">
+                    <img src="produtos img/livro romance 4.webp" alt="">
+                    <h3>Depois daquele verão</h3>
+                    <p>Dizem que você nunca mais pode voltar para casa, e para Persephone Fraser, desde que cometeu o maior erro de sua vida</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>                
+            </div>
+
+                <div class="romance-5">
+                    <img src="produtos img/livro romance 5.webp" alt="">
+                    <h3>A Culpa É das Estrelas</h3>
+                    <p>Hazel Grace Lancaster e Augustus Waters são dois adolescentes que se conhecem em um grupo de apoio para pacientes com câncer.</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>               
+             </div>
+
+                <div class="romance-6">
+                    <img src="produtos img/livro romance 6.webp" alt="">
+                    <h3>Não é como nos filmes</h3>
+                    <p>Wes e Liz vão para a faculdade após um romance inesquecível. Uma tragédia familiar obriga Wes a voltar para casa e terminar o namoro.</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>                
+            </div>
+            
+
+            </div>
+        </section>
+
+        <section class="terror">
+            <h1>Livros de Horror</h1>
+            <div class="sessao-livros-terror">
+                
+                <div class="terror-1">
+                    <img src="produtos img/livro terror 1.webp" alt="">
+                    <h3>It - A Coisa</h3>
+                    <p> A história segue as experiências de sete crianças, que são aterrorizadas por uma entidade maligna que explora os medos de suas vítimas para se disfarçar.</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>               
+             </div>
+
+                 <div class="terror-2">
+                    <img src="produtos img/livro terror 2.webp" alt="">
+                    <h3>Amigo Imaginário</h3>
+                    <p>Kate Reese e seu filho Christopher fogem para recomeçar em uma cidadezinha. O garoto desaparece em um bosque e retorna sem sequelas.</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>  
+                </div>
+
+                <div class="terror-3">
+                    <img src="produtos img/livro terror 3.webp" alt="">
+                    <h3>O paciente</h3>
+                    <p>um jovem psiquiatra em um sombrio manicômio. Ele decide tratar Joe, um paciente de altíssimo risco internado desde a infância. Mas coisas ruins acontecem.</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>  
+                </div>
+
+                <div class="terror-4">
+                    <img src="produtos img/livro terror 4.webp" alt="">
+                    <h3>O rei da Terra do Nunca</h3>
+                    <p>Uma releitura sombria, perversa e sexy da história de Peter Pan, Wendy e os Garotos Perdidos. Perfeita para fãs de romances dark e cenas picantes.</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>  
+                </div>
+
+                <div class="terror-5">
+                    <img src="produtos img/livro terror 5.webp" alt="">
+                    <h3>Os Mortos Vivos</h3>
+                    <p>acompanha quatro idosos de uma pequena cidade que se reúnem para contar histórias de fantasmas. Quando eventos macabros e suicídios inexplicáveis começam.</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>  
+                </div>
+
+                <div class="terror-6">
+                    <img src="produtos img/livro terror 6.webp" alt="">
+                    <h3>Amaldiçoado</h3>
+                    <p>o sobrenatural é pano de fundo para uma história de amor e tragédia, de traição e vingança. Um livro envolvente, emocionante e cheio de suspense.</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>  
+            </div>
+            
+
+            </div>
+        </section>
+
+        <section class="fantasia">
+
+            <h1>Livros de Fantasia</h1>
+            <div class="sessao-livros-fantasia">
+                
+                <div class="fantasia-1">
+                    <img src="produtos img/livro fantasia 1.webp" alt="">
+                    <h3>A Rainha do Sul</h3>
+                    <p> Teresa Mendonza nasceu no México. Pobre e com pouco estudo, foi estuprada e quase morta depois de o namorado ser assassinado pelo chefe do tráfico. Forçada a fugir.</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>  
+          </div>
+
+                 <div class="fantasia-2">
+                    <img src="produtos img/livro fantasia 2.webp" alt="">
+                    <h3>Percy Jackson e os Olimpianos</h3>
+                    <p>acompanha um adolescente que descobre ser um semideus — filho de Poseidon. Ele precisa navegar entre o mundo humano.</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>  
+          </div>
+
+                <div class="fantasia-3">
+                    <img src="produtos img/livro fantasia 3.webp" alt="">
+                    <h3>Cidade da Lua Crescente</h3>
+                    <p>Bryce Quinlan, uma jovem meio feérica, meio humana, tinha a vida perfeita até um demónio assassinar os seus amigos e a deixar vazia.</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>  
+          </div>
+
+                <div class="fantasia-4">
+                    <img src="produtos img/livro fantasia 4.webp" alt="">
+                    <h3>Quarta Asa</h3>
+                    <p>A jovem Violet Sorrengail, de 20 anos, planejava entrar na Divisão dos Escribas para ter uma vida pacata. Contudo, sua mãe  — a impiedosa general comandante de Navarre.</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>  
+          </div>
+
+                <div class="fantasia-5">
+                    <img src="produtos img/livro fantasia 5.webp" alt="">
+                    <h3>Mariposa vermelha</h3>
+                    <p>Em seu novo romance, Fernanda Castro narra a história de Amarílis, uma jovem que, com a ajuda de um demônio, embarca em uma jornada.</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>  
+          </div>
+
+                <div class="fantasia-6">
+                    <img src="produtos img/livro fantasia 6.webp" alt="">
+                    <h3>As Crônicas de Nárnia</h3>
+                    <p>A saga acompanha crianças do nosso mundo que são magicamente transportadas para o reino de Nárnia — um lugar onde animais falam e ocorrem batalhas.</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>  
+          </div>
+            
+
+            </div>
+        </section>
+
+        <section class="lgbt">
+
+            <h1>Livros de LGBTQIA+</h1>
+            <div class="sessao-livros-lgbt">
+
+                <div class="lgbt-1">
+                    <img src="produtos img/livro lgbt 1.webp" alt="">
+                    <h3>Vermelho, Branco e Sangue Azul</h3>
+                    <p>trama gira em torno do personagem de Alex Claremont-Diaz, filho da presidente dos Estados Unidos, e seu relacionamento com o príncipe Henry, um príncipe britânico.</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>  
+          </div>
+
+                 <div class="lgbt-2">
+                    <img src="produtos img/livro lgbt 2.webp" alt="">
+                    <h3>Um Milhão de Finais Felizes</h3>
+                    <p>Uma história sensível e esperançosa sobre o amor e o verdadeiro significado de família. Jonas não sabe o que fazer da vida e está farto do conservadorismo dos pais. Mas acredito em finais felizes.</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>  
+          </div>
+
+                <div class="lgbt-3">
+                    <img src="produtos img/livro lgbt 3.webp" alt="">
+                    <h3>A Vingança do Cupido+</h3>
+                    <p>A história acompanha a adolescente Tilly. O enredo começa quando Teddy, seu melhor amigo, pede ajuda para conquistar Katherine. No entanto, a situação se complica quando Tilly desenvolve sentimentos por ela.</p>
+                   <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>  
+          </div>
+
+                <div class="lgbt-4">
+                    <img src="produtos img/livro lgbt 4.webp" alt="">
+                    <h3>Delilah Green não está nem aí</h3>
+                    <p>Doze anos após fugir da cidade onde teve uma infância solitária, a fotógrafa retorna a contragosto para fotografar o casamento de sua meia-irmã. O plano muda ao reencontrar Claire.</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>  
+          </div>
+
+                <div class="lgbt-5">
+                    <img src="produtos img/livro lgbt 5.webp" alt="">
+                    <h3>Heartstopper</h3>
+                    <p>A obra acompanha Charlie Spring, um aluno inseguro que sofreu bullying após se assumir gay, e Nick Nelson, um jogador de rúgbi popular. Quando começam a sentar juntos, desenvolvem uma amizade intensa.</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>  
+          </div>
+
+                <div class="lgbt-6">
+                    <img src="produtos img/livro lgbt 6.webp" alt="">
+                    <h3>Combina?</h3>
+                    <p>acompanha Theo e Kit (Goodreads), ex-melhores amigos e ex-namorados que terminaram de forma brutal (Idris Brasil). Anos depois, eles reservam sem saber o mesmo ônibus para uma excursão de três semanas.</p>
+                <button>Carrinho</button>
+                <button onclick="abrir()">Comprar</button>
+                <dialog id="modal-qrcode">
+
+                <img src="img/qr code.png" alt="">
+
+                <button onclick="fechar()">X</button>
+                </dialog>  
+          </div>
+            
+
+            </div>
+        </section>
+
+    </main>
+    
+    <script type="module" src="javascript.js"></script>
+
+
+</body>
+</html>

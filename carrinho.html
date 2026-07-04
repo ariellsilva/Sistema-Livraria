@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="livros.css">
+    <title>Meu Carrinho</title>
+</head>
+<body>
+
+<nav class="navegacao-carrinho">
+    <a href="index.html">Menu</a>
+    <a href="login.html" id="link-login">Login</a> 
+    <a href="livros.html">Fazer compras</a>
+    <a href="#" id="botao-sair" style="display: none; color: red;">Sair</a>
+</nav>
+
+    <main>
+        <section class="conteudo-carrinho">
+        <h1>Seu Carrinho de Compras</h1>
+
+        <div id="identificacao-usuario" style="padding: 10px; margin: 10px 0; background-color: #f4f4f4; border-radius: 5px; display: none;"></div>
+        
+        <div id="itens-do-carrinho"></div>
+    </section>
+    </main>
+    
+    <script type="module" src="carrinho.js"></script>
+    <script  type="module" src="javascript.js"></script>
+    
+</body>
+</html>

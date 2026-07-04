@@ -1,0 +1,427 @@
+.romance img{
+    width: 200px;
+    height: 300px;
+}
+.sessao-livros-romance{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+.buscar {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 14px;
+    max-width: 500px;
+    margin: 30px auto 20px auto; 
+    padding: 6px 16px;
+    transition: all 0.3s ease;
+}
+.buscar:focus-within {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+}
+
+.buscar .material-symbols-outlined {
+    color: #94a3b8;
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.buscar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    color: #334155;
+    background: transparent;
+}
+.barra-pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap; 
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+}
+
+.barra-pesquisa button {
+    background-color: #ffffff;
+    color: #6366f1;
+    border: 2px solid #e2e8f0;
+    padding: 10px 22px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all 0.2s ease;
+}
+.barra-pesquisa button:hover {
+    background-color: #6366f1;
+    color: #ffffff;
+    border-color: #6366f1;
+    transform: translateY(-2px);
+}
+
+.barra-pesquisa button:active {
+    transform: translateY(0);
+}
+.terror img{
+    width: 200px;
+    height: 300px;
+}
+.sessao-livros-terror{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+.fantasia img{
+    width: 200px;
+    height: 300px;
+}
+.sessao-livros-fantasia{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+.navegacao-livros {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+
+}
+.navegacao-livros a {
+    color: #6366f1;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+.navegacao-livros a:hover {
+    color: #4f46e5;
+}
+.lgbt img{
+    width: 200px;
+    height: 300px;
+}
+.sessao-livros-lgbt{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+header {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+}
+.sessao-livros-romance > div:hover, .sessao-livros-terror > div:hover, .sessao-livros-fantasia > div:hover, .sessao-livros-lgbt > div:hover{
+    transform: translateY(6px);
+}
+.romance, .terror, .fantasia, .lgbt{
+
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+}
+header img {
+    width: 100%;
+    height: auto;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+header button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #1e293b;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    backdrop-filter: blur(4px);
+    transition: all 0.2s ease;
+    z-index: 5;
+}
+
+header button:hover {
+    background-color: #ffffff;
+    color: #6366f1;
+    scale: 1.05;
+}
+header button:nth-of-type(1) { right: 40px; } 
+header button:nth-of-type(2) { left: 40px; }  
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+section h1 {
+    font-size: 1.8rem;
+    color: #1e293b;
+    margin-bottom: 25px;
+    text-align: left;
+    position: relative;
+    padding-left: 15px;
+}
+
+section h1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 15%;
+    height: 70%;
+    width: 5px;
+    background-color: #6366f1;
+    border-radius: 4px;
+}
+.romance button, .terror button, .fantasia button, .lgbt button{
+    background-color: #6366f1;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 10px 14px;
+    font-size: 0.85rem;
+    margin-top: 8px;
+    width: 100%;
+}
+#modal-qrcode{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: none; 
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    width: 550px;
+    height: 550px;
+    margin: 0;
+
+    flex-direction: column;
+    align-items: center;
+
+}
+#modal-qrcode button { 
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f1f5f9; 
+    color: #64748b; 
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+#modal-qrcode img{
+  position: relative;
+  top: 15%;
+  width: 400px;
+  height: 400px;
+}
+
+/* CSS do Carrinho.html */
+.navegacao-carrinho {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.navegacao-carrinho a {
+    color: #6366f1; 
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.navegacao-carrinho a:hover {
+    color: #4f46e5;
+}
+.conteudo-carrinho {
+    background-color: #ffffff;
+    border-radius: 24px; 
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03); 
+    border: 1px solid #f1f5f9;
+}
+
+.conteudo-carrinho h1 {
+    font-size: 1.8rem;
+    color: #1e293b;
+    margin-top: 0;
+    margin-bottom: 24px;
+    position: relative;
+    padding-left: 14px;
+}
+.conteudo-carrinho h1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 15%;
+    height: 70%;
+    width: 5px;
+    background-color: #6366f1;
+    border-radius: 4px;
+}
+#itens-do-carrinho {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+}
+#itens-do-carrinho > div {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 16px;
+    gap: 20px;
+    transition: all 0.2s ease;
+}
+#itens-do-carrinho > div:hover {
+    border-color: #6366f1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.05);
+}
+#itens-do-carrinho img {
+    width: 70px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+@media(max-width:820px){
+    body{
+        overflow-x: hidden;
+    }
+    .buscar{
+        width: 80%;
+        position: relative;
+        top: 20px;
+    }
+    .barra-pesquisa{
+        position: relative;
+        top: 20px;
+    }
+    header button{
+        width: 30px;
+    }
+    .sessao-livros-romance, 
+    .sessao-livros-terror, 
+    .sessao-livros-fantasia, 
+    .sessao-livros-lgbt {
+        width: 100%; 
+        display: flex;
+        gap: 16px; 
+        overflow-x: auto; 
+        overflow-y: hidden; 
+        padding: 15px 20px; 
+        scroll-snap-type: x mandatory; 
+        -webkit-overflow-scrolling: touch; 
+    }
+    sessao-livros-romance::-webkit-scrollbar,
+    .sessao-livros-terror::-webkit-scrollbar,
+    .sessao-livros-fantasia::-webkit-scrollbar,
+    .sessao-livros-lgbt::-webkit-scrollbar {
+        display: none;
+    }
+
+    .sessao-livros-romance > div,
+    .sessao-livros-terror > div,
+    .sessao-livros-fantasia > div,
+    .sessao-livros-lgbt > div {
+        flex: 0 0 220px; 
+        scroll-snap-align: start; 
+        background-color: #ffffff;
+        border-radius: 16px;
+        padding: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .romance img, .terror img, .fantasia img, .lgbt img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2/3; 
+        border-radius: 12px;
+    }
+
+    .romance button, .terror button, .fantasia button, .lgbt button {
+        padding: 10px 14px;
+        font-size: 0.85rem;
+        margin-top: 8px;
+        border-radius: 8px;
+        width: 100%; 
+    }
+     #modal-qrcode{
+    width: 350px;
+    height: 350px;
+    margin: 0;
+
+    overflow-y: hidden;
+    }
+    #modal-qrcode img{
+    position: relative;
+    top: 15%;
+    width: 250px;
+    height: 250px;
+}
+   dialog button{
+    width: 5%;
+    height: 15%;
+    border-radius: 50%;
+    text-align: center;
+
+    position: relative;
+    top: -100%;
+    right: 50%;
+}
+
+
+
+}
